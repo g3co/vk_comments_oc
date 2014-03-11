@@ -1,7 +1,4 @@
 <?php
-################################################################################################
-#  DIY Module Builder for Opencart 1.5.1.x From HostJars http://opencart.hostjars.com  		   #
-################################################################################################
 class ControllerModuleVkComments extends Controller {
 	
 	private $error = array(); 
@@ -9,9 +6,6 @@ class ControllerModuleVkComments extends Controller {
 	
 	public function index() { 
 	
-		//$this->load->model('module/vk_comments');
-		//$this->model_module_vk_comments->createModuleTables();
-		
 		//Load the language file for this module
 		$this->load->language('module/vk_comments');
 		
@@ -32,16 +26,7 @@ class ControllerModuleVkComments extends Controller {
 			$this->redirect($this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL'));
 		}
 		
-		
-		//This is how the language gets pulled through from the language file.
-		//
-		// If you want to use any extra language items - ie extra text on your admin page for any reason,
-		// then just add an extra line to the $text_strings array with the name you want to call the extra text,
-		// then add the same named item to the $_[] array in the language file.
-		//
-		// 'vk_comments_example' is added here as an example of how to add - see admin/language/english/module/vk_comments.php for the
-		// other required part.
-		
+			//подключение языковых функций
 		$text_strings = array(
 				'heading_title',
 				'entry_widgetid',
