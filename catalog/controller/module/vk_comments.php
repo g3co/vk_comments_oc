@@ -1,8 +1,4 @@
 <?php
-################################################################################################
-#  DIY Module Builder for Opencart 1.5.1.x From HostJars http://opencart.hostjars.com    	   #
-################################################################################################
-?><?php
 
 class ControllerModuleVkComments extends Controller {
 	protected function index() {
